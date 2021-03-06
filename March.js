@@ -1,3 +1,12 @@
+// Sleigh Authentication https://www.codewars.com/kata/52adc142b2651f25a8000643
+
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function(name, password) {
+  return name == 'Santa Claus' && password == "Ho Ho Ho!";
+};
+
+
 // Is this my tail? https://www.codewars.com/kata/56f695399400f5d9ef000af5
 
 function correctTail(bod, tail){
