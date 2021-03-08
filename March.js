@@ -1,3 +1,9 @@
+// Grasshopper - Check for factor https://www.codewars.com/kata/55cbc3586671f6aa070000fb
+
+function checkForFactor (base, factor) {
+  return base % factor == 0
+}
+
 // Remove duplicates from list https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
 
 function distinct(a) {
