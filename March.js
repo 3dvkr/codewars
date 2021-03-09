@@ -1,3 +1,15 @@
+// Thinkful - Logic Drills: Traffic light https://www.codewars.com/kata/58649884a1659ed6cb000072
+
+function updateLight(current) {
+  let update = {
+    red: 'green',
+    yellow: 'red',
+    green: 'yellow'
+  }
+  return update[current];
+}
+
+
 // Grasshopper - Check for factor https://www.codewars.com/kata/55cbc3586671f6aa070000fb
 
 function checkForFactor (base, factor) {
