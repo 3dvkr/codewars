@@ -1,3 +1,10 @@
+// Hello, Name or World! https://www.codewars.com/kata/57e3f79c9cb119374600046b
+
+function hello(name) {
+  return name && name.length > 0 ? `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!` : 'Hello, World!';
+}
+
+
 // Thinkful - Logic Drills: Traffic light https://www.codewars.com/kata/58649884a1659ed6cb000072
 
 function updateLight(current) {
