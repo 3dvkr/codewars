@@ -1,3 +1,10 @@
+// Surface Area and Volume of a Box https://www.codewars.com/kata/565f5825379664a26b00007c
+
+function getSize(width, height, depth){
+  return [2 * (width * height + width *  depth + height * depth), width * height * depth ]
+}
+
+
 // Hello, Name or World! https://www.codewars.com/kata/57e3f79c9cb119374600046b
 
 function hello(name) {
