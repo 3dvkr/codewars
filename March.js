@@ -1,3 +1,12 @@
+// Regular Ball Super Ball https://www.codewars.com/kata/53f0f358b9cb376eca001079
+
+var Ball = function (ballType="regular") {
+  return {
+    ballType
+  }
+};
+
+
 // Surface Area and Volume of a Box https://www.codewars.com/kata/565f5825379664a26b00007c
 
 function getSize(width, height, depth){
