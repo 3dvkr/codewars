@@ -1,3 +1,9 @@
+// How many lightsabers do you own? https://www.codewars.com/kata/51f9d93b4095e0a7200001b8
+
+function howManyLightsabersDoYouOwn(name) {
+  return name == 'Zach' ? 18 : 0;
+}
+
 // Filling an array (part 1) https://www.codewars.com/kata/571d42206414b103dc0006a1
 
 const arr = N => N >= 0 ? new Array(N).fill(0).map((x, i) => i) : [];
