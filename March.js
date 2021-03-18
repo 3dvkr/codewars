@@ -1,3 +1,10 @@
+// The Feast of Many Beasts https://www.codewars.com/kata/5aa736a455f906981800360d
+
+function feast(beast, dish) {
+  console.log(beast, dish);
+  return beast[0] == dish[0] && beast[beast.length - 1] == dish[dish.length - 1];
+}
+
 // Exclusive "or" (xor) Logical Operator https://www.codewars.com/kata/56fa3c5ce4d45d2a52001b3c
 
 function xor(a, b) {
