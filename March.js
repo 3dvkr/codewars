@@ -1,3 +1,9 @@
+// Remove exclamation marks https://www.codewars.com/kata/57a0885cbb9944e24c00008e
+
+function removeExclamationMarks(s) {
+  return s.split('').filter(x => x != '!').join('');
+}
+
 // The Feast of Many Beasts https://www.codewars.com/kata/5aa736a455f906981800360d
 
 function feast(beast, dish) {
