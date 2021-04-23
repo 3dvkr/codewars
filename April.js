@@ -28,3 +28,9 @@ function getCount(str) {
   }  
   return vowelsCount;
 }
+
+// https://www.codewars.com/kata/52fba66badcd10859f00097e
+
+function disemvowel(str) {
+  return str.split('').filter(x => !'aeiou'.includes(x.toLowerCase())).join('');
+}
