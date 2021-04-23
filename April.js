@@ -15,3 +15,16 @@ function reverseWords(str){
 function highAndLow(numbers){
   return '' + Math.max(...numbers.split(' ')) + ' '+ Math.min(...numbers.split(' '))
 }
+
+//https://www.codewars.com/kata/54ff3102c1bad923760001f3
+
+function getCount(str) {
+  var vowelsCount = 0;
+  
+  for (letter of str) {
+    if (['a', 'e', 'i', 'o', 'u'].includes(letter)) {
+      vowelsCount++;
+    }
+  }  
+  return vowelsCount;
+}
