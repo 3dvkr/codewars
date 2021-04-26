@@ -41,3 +41,10 @@ function disemvowel(str) {
 function arrayDiff(a, b) {
   return a.filter(x => !b.includes(x))
 }
+
+// https://www.codewars.com/kata/52597aa56021e91c93000cb0
+var moveZeros = function (arr) {
+  let zeroSort = arr.filter(x => x !== 0);
+  return zeroSort.concat(new Array(arr.length - zeroSort.length).fill(0));  
+}
+
