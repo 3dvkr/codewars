@@ -48,3 +48,9 @@ var moveZeros = function (arr) {
   return zeroSort.concat(new Array(arr.length - zeroSort.length).fill(0));  
 }
 
+// https://www.codewars.com/kata/525f50e3b73515a6db000b83
+
+function createPhoneNumber(numbers) {
+  let p = numbers.map(x => String(x));
+  return `(${p[0]+p[1]+p[2]}) ${p[3]+p[4]+p[5]}-${p[6]+p[7]+p[8]+p[9]}`;
+}
