@@ -17,7 +17,7 @@ function highAndLow(numbers){
   return '' + Math.max(...numbers.split(' ')) + ' '+ Math.min(...numbers.split(' '))
 }
 
-//https://www.codewars.com/kata/54ff3102c1bad923760001f3
+// https://www.codewars.com/kata/54ff3102c1bad923760001f3
 
 function getCount(str) {
   var vowelsCount = 0;
@@ -53,4 +53,17 @@ var moveZeros = function (arr) {
 function createPhoneNumber(numbers) {
   let p = numbers.map(x => String(x));
   return `(${p[0]+p[1]+p[2]}) ${p[3]+p[4]+p[5]}-${p[6]+p[7]+p[8]+p[9]}`;
+}
+
+// https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
+
+function abbrevName(name){
+  let initials = name.toUpperCase().split(' ');
+    return initials[0][0] + '.' + initials[1][0];
+}
+
+// https://www.codewars.com/kata/5949481f86420f59480000e7
+
+function oddOrEven(array) {
+  return array.reduce((acc, el) => acc + el, 0) % 2 == 0 ? 'even' : 'odd';
 }
