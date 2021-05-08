@@ -33,10 +33,16 @@ Example:
 [ 1, 1, 11, 2, 3 ] => 6
 */
 function middleSum(inputArr) {
-    return inputArr.reduce((acc, el, _, arr) => {
-      if (![Math.min(...arr), Math.max(...arr)].includes(el)) {
-        acc += el;
-      }
-      return acc;
-    });
+  let minIndex = inputArr.indexOf(Math.min(...inputArr));
+  let maxIndex = inputArr.indexOf(Math.max(...inputArr));
+  return inputArr.reduce((acc, el, i, arr) => {
+    if (![minIndex, maxIndex].includes(i)) {
+      acc += el;
+    }
+    return acc;
+  }, 0);
+}
+// OR
+function middleSum(inputArr) {
+  return inputArr.reduce((acc, el) => acc + el, 0) - Math.min(...inputArr) - Math.max(...inputArr);
 }
